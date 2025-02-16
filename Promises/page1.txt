@@ -1,0 +1,111 @@
+Here’s a list of 50 practice questions on promises in JavaScript, designed to enhance both logical thinking and code optimization skills. The scenarios are focused on various real-world situations involving promises.
+
+Basic Promise Handling
+You have two promises, p1 and p2. p1 gets rejected and p2 gets resolved. Handle them such that instead of p1 getting rejected, p2 runs.
+
+Fetch data from the given URL https://jsonplaceholder.typicode.com/posts and filter out posts where the userId is greater than 5.
+
+Create a function that returns a promise, which resolves after a delay of 2 seconds. Use this function to log "Hello" after 2 seconds.
+
+Chain two promises such that the second one only runs if the first one resolves successfully. If the first one fails, catch the error and log it.
+
+Resolve a promise with a string "Hello" and chain a .then() block that logs "World" after 1 second.
+
+Error Handling and Rejections
+You have two promises, p1 and p2. p1 gets resolved with a value of 5 and p2 is rejected with a reason "Error!". Handle them using Promise.all but ensure that if p1 fails, p2 still runs.
+
+Write a promise chain where the first promise fails and you handle it by returning another promise that resolves with a value 10. Log the final value.
+
+Create a promise that is rejected after a 1-second delay. Catch the rejection and handle it by returning a resolved promise with the string "Recovered".
+
+Write a function that returns a promise, and if it gets rejected, retry the promise up to 3 times before failing.
+
+Using Promise.all(), ensure that even if one promise rejects, you log a specific message that the other promises completed.
+
+Promise Composition and Synchronization
+You have two promises p1 and p2. Use Promise.race() to resolve whichever promise gets resolved first. Log the result.
+
+Chain three promises such that each promise depends on the result of the previous promise. The first promise should resolve with a number 10, the second should multiply it by 2, and the third should divide the result by 5.
+
+Write a function that accepts an array of promises and resolves them in parallel, logging each resolved value one by one using Promise.all.
+
+Create a promise that resolves after 3 seconds. Create another promise that resolves after 1 second. Use Promise.all() and log which one resolves first.
+
+Use Promise.allSettled() to handle multiple promises and log whether each promise was fulfilled or rejected.
+
+Timeout and Delayed Execution
+Write a promise that resolves after a timeout of 2 seconds. Create another promise that resolves immediately. Use Promise.race() to handle whichever resolves first.
+
+Write a promise that rejects after a 5-second timeout, and then handle that rejection with .catch() and log a message saying "Timeout exceeded".
+
+Create a function that returns a promise that resolves after 1 second. Use Promise.all() to ensure two promises resolve together.
+
+Create a promise that resolves after a random delay (between 1-5 seconds). Use Promise.race() to see which promise resolves first from an array of promises.
+
+Write a function that simulates a network request and takes 2 seconds to resolve. Write another function that times out after 1 second, and use Promise.race() to handle the timeout.
+
+Fetch API and JSON Handling
+Fetch the data from https://jsonplaceholder.typicode.com/users and extract the name of all users.
+
+Fetch data from https://jsonplaceholder.typicode.com/todos and filter out the tasks where completed is true.
+
+Using the fetch API, retrieve data from https://jsonplaceholder.typicode.com/posts. Filter the data by userId being 1, and log the result.
+
+Fetch data from https://jsonplaceholder.typicode.com/albums and map over the result to return only the album titles.
+
+Fetch data from https://jsonplaceholder.typicode.com/comments and group the comments by their postId.
+
+Parallel and Sequential Promise Handling
+Write a program that executes three promises sequentially where each promise resolves with an incrementing number, starting from 1. Log each value in sequence.
+
+Fetch data from https://jsonplaceholder.typicode.com/photos and https://jsonplaceholder.typicode.com/comments. Use Promise.all() to fetch both and combine the data into a single array.
+
+You need to fetch a list of users and then fetch the posts of each user one by one. Use Promise.all() to get all user posts concurrently.
+
+Simulate a scenario where three promises take random times to resolve. Use Promise.allSettled() to ensure all promises complete and log their outcomes.
+
+Write a function that accepts multiple promises, runs them in parallel, and resolves after all promises are completed, returning an array of results.
+
+Complex Promise Handling with Delay and Retry
+Implement a retry mechanism with promises, where the promise retries 3 times if it fails, and if it fails after 3 retries, it rejects.
+
+Write a function that returns a promise, and the promise resolves with the value true or false randomly. Call the function 5 times and log the results using Promise.all().
+
+Write a promise chain where the first promise resolves after 2 seconds, the second promise resolves after 1 second, and the third resolves immediately. Ensure the second promise is delayed until the first resolves.
+
+Create a promise that simulates a network request that either resolves or rejects randomly after 2 seconds. Use Promise.all() to handle the results of multiple promises.
+
+Implement a function that returns a promise which resolves after a delay, but only if a certain condition is met (e.g., number is even). Otherwise, it rejects.
+
+Advanced Scenarios
+Write a promise that resolves with an object containing a status of either success or failure. Based on the status, handle the resolution or rejection appropriately.
+
+Use Promise.all() to fetch data from three different APIs and then combine the responses into a single object with properties posts, users, and comments.
+
+Write a function that returns a promise resolving with random data after a delay of 1-3 seconds. Use this data to trigger other promises that resolve with additional data.
+
+Fetch data from https://jsonplaceholder.typicode.com/photos and https://jsonplaceholder.typicode.com/posts. Chain them together to display all post titles along with their corresponding photo URLs.
+
+Write a function that returns a promise which resolves after a specified delay. Implement logic that cancels the promise if the delay exceeds 5 seconds.
+
+Promise Optimization
+You have an array of promises. Optimize it such that only the first n promises are executed and handled, ignoring the rest.
+
+Implement a throttling mechanism with promises that ensures only n promises are handled concurrently.
+
+You are given a list of promises with varying completion times. Optimize the process such that the promises are handled as quickly as possible without overwhelming the system.
+
+Create a function that accepts an array of promises and uses Promise.all() to optimize the handling, but adds a delay for each promise to simulate API throttling.
+
+Write a function that returns a promise which resolves after a delay, but also logs a message if the delay exceeds 2 seconds.
+
+Promise Patterns and Best Practices
+Implement a function using Promise.all() to run two asynchronous tasks, but ensure that if one task fails, the other continues to run.
+
+Use Promise.finally() to perform cleanup operations after a promise resolves or rejects, logging "Cleanup complete".
+
+Given multiple promises that resolve with random data, handle them using Promise.allSettled() and log each result with either fulfilled or rejected.
+
+Use Promise.all() to fetch data from two APIs and combine the responses in a way that the data from one API depends on the results from the other API.
+
+Create a function that returns a promise with the data fetched from an API. Implement an optimization that avoids fetching the same data multiple times by caching the result.

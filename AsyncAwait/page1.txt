@@ -1,0 +1,100 @@
+1. Basic async/await Handling
+If you have a promise p1 that resolves after 2 seconds, and you await it inside an async function, what will happen if you await a second promise p2 that resolves after 1 second?
+2. Handling Multiple Promises with async/await
+Given promises p1 and p2 where p1 resolves after 3 seconds and p2 resolves after 2 seconds, use async/await to get the results of both promises, ensuring they are logged in the order they resolve.
+3. Handling Promise Rejections in async/await
+Given two promises p1 (resolved) and p2 (rejected), write an async/await function to ensure that both outcomes are handled gracefully, and p2 rejection doesn’t prevent logging the result of p1.
+4. Parallel Promises with Promise.all and async/await
+How would you run two promises in parallel using async/await and ensure that the second promise runs only after the first one finishes?
+5. Handling Rejections without try/catch
+Without using try/catch, how would you handle the rejection of one of the promises in an async function where multiple promises are used?
+6. Chaining Promises with await
+Write a function where one promise depends on the result of another. Ensure both promises execute in the proper order using async/await.
+7. Timeout Handling with async/await
+Given a promise p1 that resolves after 5 seconds, use async/await to implement a timeout that rejects the promise after 3 seconds.
+8. Promise Rejection with async/await
+Write a function that resolves a promise p1 but rejects the next promise p2. Ensure that despite the rejection, p1 is logged correctly.
+9. Error Propagation with async/await
+How would you handle a scenario where one promise p1 rejects but you want the error from p1 to be handled in the outer function instead of the inner one using async/await?
+10. Using Promise.allSettled with async/await
+Given multiple promises, use async/await with Promise.allSettled() to wait for all promises to settle (either resolved or rejected) and log their outcomes.
+11. Promise.all() vs Promise.race() with async/await
+What’s the difference between Promise.all() and Promise.race() in an async/await function, and how would you use them in the context of waiting for promises?
+12. Handling setTimeout with async/await
+You have a setTimeout function that runs after 2 seconds. How would you wrap it in a promise and await its resolution using async/await?
+13. Handling Multiple Async Functions Sequentially
+Given multiple async functions that return promises, write an example where they run sequentially using async/await.
+14. Awaiting Multiple Promises in Parallel
+Write a function using async/await where you run multiple promises in parallel and wait for all of them to resolve using Promise.all().
+15. Returning a Rejected Promise from an async Function
+How would you return a rejected promise in an async function and catch the rejection in the calling code?
+16. Using Promise.all with Mixed Resolved and Rejected Promises
+Given a set of promises where some may resolve and others may reject, use async/await and Promise.all() to ensure that you get the result of all promises without them interrupting each other.
+17. Gracefully Handling Multiple Rejections
+If you have multiple promises that can individually reject, write a function using async/await that handles each rejection without affecting others.
+18. Returning the First Resolved Promise
+How would you return the first resolved promise from a set of promises using async/await?
+19. Nested Promises with async/await
+How do you handle nested promises inside an async function and ensure that each promise resolves before the next one starts?
+20. Avoiding Promise Rejection in async/await
+Write a function where you call multiple async functions, but if one of them rejects, the error is not thrown, and the program continues.
+21. Handling Async Code with Loops
+How would you iterate through an array of promises using async/await, ensuring that each promise resolves before the next iteration starts?
+22. Handling Promise Rejection with a Default Value
+If you have a promise p1 that can either resolve or reject, how would you handle the rejection and return a default value instead using async/await?
+23. Async/Await with setInterval
+How can you use async/await with setInterval to repeatedly run a function until a certain condition is met?
+24. Timeout for Async Functions
+How would you implement a timeout for an async function using async/await so that the function either resolves or rejects after a fixed time limit?
+25. Awaiting Multiple Promise Rejections
+If you need to handle a situation where multiple promises might reject, use async/await to ensure that the rejection from one promise doesn’t stop the other promises from being handled.
+26. Conditional async/await Execution
+How would you conditionally resolve or reject a promise in an async function, depending on the value passed into the function?
+27. Async/Await with API Calls
+How would you use async/await to fetch data from an API and handle the error if the API request fails?
+28. Async/Await with External Libraries
+How would you use async/await in combination with an external library that provides promises? For example, using axios for making HTTP requests.
+29. Handling Large Data Fetch with async/await
+Given a promise that fetches a large chunk of data, how would you handle it with async/await to prevent blocking the main thread?
+30. Handling Multiple Dependencies in Async Code
+Given two promises p1 and p2 where p2 depends on the result of p1, write an async/await solution to ensure p2 resolves after p1.
+31. Cancellation of Async Function
+How would you implement a cancellation mechanism in an async function using async/await and AbortController?
+32. Retrying Failed Async Calls
+How would you implement a retry mechanism for an async function that retries a promise when it fails using async/await?
+33. Using Async Await with Promise.any()
+How would you use async/await in combination with Promise.any() to return the first resolved promise from multiple promises?
+34. Chaining Multiple Async Calls
+How do you chain multiple async calls in an async function, ensuring that each resolves before the next call is made?
+35. Handling Async Functions with Promise.allSettled
+Use async/await with Promise.allSettled() to log the outcome of multiple promises that may resolve or reject.
+36. Handling Promise Race with Async/Await
+Write an async/await function to wait for the first promise to resolve or reject from a list of promises using Promise.race().
+37. Handling Async Errors Inside Loops
+How would you handle errors that occur inside a loop of async functions, ensuring that each error is handled gracefully without breaking the loop?
+38. Async Functions with Long-Running Tasks
+If you have a long-running task wrapped in a promise, how would you handle the task asynchronously with async/await to prevent blocking the event loop?
+39. Error Propagation in Async Functions
+How do you propagate an error from one async function to another when calling multiple async functions sequentially?
+40. Async/Await with Timeout
+Write an async/await function where you implement a timeout to reject a promise if it doesn't resolve within a specified time limit.
+41. Async Await with Object Iteration
+How would you iterate over an object’s keys and values in an async function, waiting for each promise to resolve before continuing?
+42. Improving Readability with Async/Await
+How can you improve the readability of your async code when dealing with multiple async/await calls, especially when you need to handle errors gracefully?
+43. Sequential vs. Parallel Async Calls
+How would you modify an async function to switch from sequential promise handling to parallel execution using async/await?
+44. Multiple Async Calls with Different Delays
+Given promises with different delays, how would you use async/await to ensure the results are logged in the order they are resolved, not based on delay?
+45. Handling Async Function Timeouts
+Write an async function that times out if it takes too long to complete. Ensure that the timeout is handled without causing a crash.
+46. Promise Resolution Order with Async/Await
+How would you ensure that the second promise resolves only after the first promise, even if the second promise has a shorter delay?
+47. Parallel Async Operations with async/await
+How would you handle multiple async operations running in parallel and collect their results in an array?
+48. Handling Async/Await in a Recursive Function
+How would you manage async/await in a recursive function, ensuring that each recursion step waits for the previous one to complete?
+49. Using Async/Await for Debouncing
+How could you use async/await in a debounced function that limits the rate of calling an async API?
+50. Async/Await with File Operations
+How would you handle file reading and writing asynchronously using async/await to avoid blocking the main thread?

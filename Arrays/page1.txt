@@ -1,0 +1,54 @@
+Array Manipulation and Filtering
+You are given an array of numbers and strings. Return an array with only numbers.
+Given an array with truthy and falsy values, remove all the falsy values.
+Write a function to find the maximum number in an array.
+Given an array of numbers, return the array with all duplicate values removed.
+You are given an array of strings, return the array sorted in reverse alphabetical order.
+Write a function that finds the index of a number in a given array. If the number does not exist, return -1.
+Create a function that removes all negative numbers from an array of numbers.
+Given an array of objects representing people (with properties name and age), return an array of names of people who are 18 or older.
+Write a function to reverse the order of elements in an array.
+Given an array of strings, return the longest string.
+You are given an array of numbers, return the sum of all even numbers.
+Create a function to check if an array contains a specific value.
+Given an array of numbers, return the product of all the numbers in the array.
+Write a function that returns an array with all values squared.
+Given an array of numbers, return the average value of the numbers.
+Given an array of strings, return an array with all the strings converted to uppercase.
+Write a function that removes all instances of a specified value from an array.
+Given an array of objects, return an array of objects that have a specific property value.
+Write a function that checks if two arrays are equal (same elements in the same order).
+Given an array of numbers, return the first number that is divisible by 3.
+Create a function to get the common elements between two arrays.
+Given an array of numbers, find and return the second largest number.
+Write a function to find and return the first non-repeating character in an array of characters.
+Given an array of integers, return an array of only the prime numbers.
+Write a function to check if a given number is present in an array and return true or false.
+Array Sorting and Searching
+Sort an array of numbers in ascending order.
+Sort an array of numbers in descending order.
+Given an array of strings, sort them by their length in ascending order.
+Write a function to sort an array of objects based on a specific property (e.g., age).
+Given an array of objects, sort the array by the name property in alphabetical order.
+Write a function that searches for an element in a sorted array using binary search.
+Sort an array of dates in chronological order.
+Write a function that sorts an array of numbers without using the built-in sort() method.
+Given an array of strings, sort them in reverse alphabetical order.
+Given an array of numbers, return the index of the first number greater than a given target.
+Mapping, Reducing, and Iteration
+Create a function that multiplies all numbers in an array by 2 using map().
+Using the map() method, create a function that returns an array of the lengths of strings from the original array.
+Using the reduce() method, sum all the numbers in an array.
+Write a function to flatten an array of arrays into a single array using reduce().
+Write a function using reduce() to count the occurrences of each character in a string.
+Using map(), create a function that converts all numbers in an array to their absolute value.
+Write a function using reduce() to find the largest number in an array.
+Using map(), create a function that doubles each value in an array of numbers.
+Write a function using map() that returns the first letter of each word in a string array.
+Using reduce(), find the maximum number in an array of numbers.
+Advanced Array Techniques
+Write a function that finds the difference between two arrays (i.e., values in one but not the other).
+Write a function that removes all occurrences of a specific value from an array of numbers.
+Given an array of arrays, merge them into a single array with no duplicates.
+Write a function that converts an array of objects into an object where each key is a property from the array objects.
+Create a function that finds the intersection of two arrays (common elements).
